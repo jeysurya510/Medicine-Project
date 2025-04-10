@@ -1,7 +1,7 @@
 import { Component } from "react";
 import {RegsiterContainer,ErrorPara,
     RegisterForm,RegImg,Form,Label,Input,Button,Input1} from './styledComponents'
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Register extends Component{
 
@@ -14,7 +14,7 @@ class Register extends Component{
 
     successReg = (msg) => {
         this.setState({textMesg:msg})
-        setTimeout(() => Navigate('/login'), 1000);
+         this.props.history.replace('/login')
     }
 
     failureReg = (msg) => {
@@ -65,6 +65,7 @@ class Register extends Component{
 render(){
     const {name,email,password,textMesg} = this.state
     console.log(textMesg)
+    console.log(this.props.history)
     return(
         <RegsiterContainer>
           <RegisterForm>

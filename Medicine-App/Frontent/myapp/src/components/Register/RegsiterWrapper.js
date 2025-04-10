@@ -1,14 +1,14 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
-import Login from '../Login'
+import Register from '../Register'
 
-const LoginWrapper = (props) => {
+const RegisterWrapper = (props) => {
     const navigate = useNavigate()
 
     const history = {
       replace: (path) => navigate(path),
     }
     
-    return <Login {...props} history={history} />;
+    return <Register {...props} history={history} />;
 }
-export default LoginWrapper;
+export default RegisterWrapper;
