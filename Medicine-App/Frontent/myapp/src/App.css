@@ -4,3 +4,14 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+}
+
