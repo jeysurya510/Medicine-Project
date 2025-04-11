@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const { faker } = require('@faker-js/faker');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -27,7 +28,37 @@ const initializeDBAndServer = async () => {
         email TEXT UNIQUE,
         password TEXT
       )
-    `);
+    `)
+    await db.run(`DROP TABLE IF EXISTS products`);
+
+await db.run(`
+  CREATE TABLE IF NOT EXISTS products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    category TEXT,
+    description TEXT,
+    image TEXT,
+    price REAL
+  )
+`);
+
+
+    const count = await db.get(`SELECT COUNT(*) AS count FROM products`);
+    if (count.count === 0) {
+      for (let i = 1; i <= 50; i++) {
+        const name = `Medicine ${i}`;
+        const category = faker.helpers.arrayElement(['Orphan', 'Essential', 'Emergency', 'OTC']);
+        const description = faker.commerce.productDescription();
+        const image = faker.image.urlLoremFlickr({ category: 'medical' });
+        const price = parseFloat(faker.commerce.price(100, 5000));
+
+        await db.run(
+          `INSERT INTO products (name, category, description, image, price)
+           VALUES (?, ?, ?, ?, ?)`,
+          [name, category, description, image, price]
+        );
+      }
+    }
 
     app.listen(5000, () => {
       console.log('Server is running at http://localhost:5000');
@@ -89,5 +120,34 @@ app.post('/login', async (req, res) => {
     } else {
       res.status(400).json('Invalid password');
     }
+  }
+});
+
+//Api 3 Products
+
+app.get("/products/", (request, response) => {
+  let jwtToken;
+  const authHeader = request.headers["authorization"];
+  if (authHeader !== undefined) {
+    jwtToken = authHeader.split(" ")[1];  
+  }
+  if (jwtToken === undefined) {
+    response.status(401);
+    response.send("Invalid Access Token");
+  } else {
+    jwt.verify(jwtToken, "secretkey", async (error, payload) => {
+      if (error) {
+        response.send("Invalid Access Token");
+      } else {
+        const getproducts = `
+            SELECT
+              *
+            FROM
+             produts
+            ORDER BY id`;
+        const productArray = await db.all(getproducts);
+        response.json(productArray);
+      }
+    });
   }
 });
