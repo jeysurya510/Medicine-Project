@@ -65,7 +65,7 @@ class Home extends Component {
            </div>
            <div className="contact-info">
              <MdOutlineMarkEmailUnread className="icon-class"/>
-             <p>medneedsforall@gmail.com</p>
+             <p>yourneeds@medneeds4all.com </p>
            </div>
           </div>
           <p className="win-p">Winter Discount! Everything is 30% off. <Link to='/' >Shop now!</Link></p>
@@ -91,10 +91,9 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <img className="home-logo-cap" src="https://medneeds4all.com/assets/Capsule_img-SpFhLCGA.png" alt="home-logo" />
         </div>
         {/*our mission*/}
-        <div className="about-main-con">
+        <div className="about-main-con animate-slideInRight">
         <h1 className="ab-1">Our Mission</h1>
         <div className="about-container">
            <div className="about-child">
@@ -165,7 +164,7 @@ class Home extends Component {
            </div>
            <div className="contact-info1">
              <MdOutlineMarkEmailUnread className="icon-class1"/>
-             <p>medneedsforall@gmail.com</p>
+             <p>yourneeds@medneeds4all.com </p>
            </div>
            <div className="contact-info1">
            <FaInstagram className="ins-logo-icon" />
@@ -195,9 +194,8 @@ class Home extends Component {
            <FaWhatsapp className="ins-logo-icon-footer"/>
            <FaTwitter className="ins-logo-icon-footer" />
           </div>
-          <p className="cop-p">Copyright ©2021 All rights reserved |
+          <p className="cop-p">Copyright ©2025 All rights reserved |
           This template is made with by <FaHeart />  MedNeeds4All.com</p>
-          <p className="dev-p">Design and Developed By Jeysurya</p>
         </div>
         </div>
     )
