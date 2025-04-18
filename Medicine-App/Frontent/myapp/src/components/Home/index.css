@@ -6,6 +6,379 @@
   padding: 10px;
   font-size: 16px;
 }
+@media screen and  (max-width:767px){
+    .winter-discount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .contact-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-info{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .home-logo-cap{
+        width: 300px;
+        height: 200px;
+        margin-left: 0px;
+    }
+    .home-content{
+        height: 50vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url('https://magazine.medlineplus.gov/images/uploads/main_images/geneTherapies980x587.jpg');
+    }
+    .home-content-child {
+        width: 100%;
+        padding: 10px;
+    }
+    .home-content-h1{
+        font-size: 30px;
+    }
+    .home-content-p{
+        font-size: 16px;
+    }
+    .contact-btn{
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .ten-year-child{
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+    .ten-year-child-1{
+        margin-top: 10px;
+    }
+    .ten-year-h1{
+        font-size: 20px;
+    }
+    .ten-year-p{
+        font-size: 14px;
+    }
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .about-main-con{
+        margin: 20px;
+        padding: 10px;
+        background-color: #ffffff;
+        height: 500px;
+        padding: 90px;
+    }
+    .about-child{
+        width: 30px;
+    }
+    .about-child h1{
+        font-size: 20px;
+    }
+    .about-child p {
+        font-size: 12px;
+    }
+    .product-main-con{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+    }
+    .product-main-parent-con{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .product-main-con h1{
+        font-size: 30px;
+        margin-left: 0px;
+    }
+    .product-main-con button{
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .product-list-ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-item{
+        width: 100%;
+        margin: 10px;
+        margin-right: 0px;
+    }
+    .list-img{
+        width: 100%;
+        height: 300px;
+    }
+    .product-card{
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+        margin-right: 0px;
+    }
+    .name-p{
+        font-size: 16px;
+    }
+    .price-p{
+        font-size: 16px;
+    }
+    .list-add-btn{
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+    .contact-us-con{
+        height: auto;
+        padding: 10px;
+    }
+    .contact-us-card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .contact-us-first{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .contact-us-second{
+        width: 100%;
+        height: auto;
+        padding-left: 20px;
+    }
+    .contact-us-first h1{
+        font-size: 20px;
+    }
+    .contact-us-first input{
+        width: 100%;
+        padding: 6px;
+        margin: 10px;
+        font-size: 14px;
+    }
+    .contact-us-first textarea{
+        width: 100%;
+        padding: 6px;
+        margin: 10px;
+        font-size: 14px;
+    }
+    .contact-us-first button{
+        width: 100px;
+        padding: 5px;
+        font-size: 14px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .contact-info1{
+        margin: 10px;
+    }
+    .icon-class1{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    .ins-logo-icon{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .footer-main-container{
+        padding: 10px;
+    }
+    .footer-main-container h1{
+        font-size: 20px;
+    }
+    .dev-p{
+        font-size: 12px;
+    }
+    .cop-p{
+        font-size: 14px;
+    }
+    .footer-main-container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-main-container li {
+        padding-right: 0px;
+        font-size: 14px;
+    }
+    .ins-logo-icon-footer{
+        font-size: 30px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+    .ins-logo-icon-footer:active{
+        transform: scale(0.95);
+    }
+    .ins-logo-icon-footer:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .ins-logo-icon-footer:focus{
+        outline: none;
+    }
+
+}
 .home-container{
     background-color: #f0f0f0;
     height: auto;
@@ -434,7 +807,7 @@ margin-bottom: 0;
   margin-top: 10px;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
@@ -456,7 +829,7 @@ margin-bottom: 0;
 }
 
 /* Animation Utility Classes */
-.animate-fadeIn {
+/* .animate-fadeIn {
     animation: fadeIn 1s ease-in-out;
 }
 .animate-slideUp {
@@ -470,10 +843,10 @@ margin-bottom: 0;
 }
 .animate-zoomIn {
     animation: zoomIn 0.8s ease-in-out;
-}
+} */
 
 /* Assign animations to components */
-.winter-discount,
+/* .winter-discount,
 .home-container,
 .contact-info,
 .contact-info-container,
@@ -523,15 +896,15 @@ margin-bottom: 0;
 .footer-main-container li,
 .ins-logo-icon-footer {
     animation: fadeIn 0.8s ease-in-out, slideUp 0.8s ease-out;
-}
+} */
 
 /* Optional: Add hover effect for smoothness */
-.product-card:hover,
+/* .product-card:hover,
 .list-add-btn:hover,
 .contact-btn:hover,
 .home-logo-cap:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
+ */
 
